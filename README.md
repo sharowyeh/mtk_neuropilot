@@ -6,7 +6,11 @@ i just kept 8.13.0 files here for testing on evk g1200
 
 - mtk converter 8.13.0 requres protobuf==3.20.3
 - for dependency issue, tensorflow==2.12.0
-- for tensorflow gpu support, tensorflow-gpu==2.12.0
+- for tensorflow-gpu, is integrated into tensorflow package from 2.12
+  - tensorflow[and-cuda] only available from 3.x
+- for wsl2, default wsl ubuntu does not support nvidia driver, NUMA(?) node even force installed cuda toolkit
+  - better use docker container or specify installation to default wsl ubuntu from nvidia offical website
+  - https://docs.nvidia.com/cuda/wsl-user-guide/index.html
 
 # tf model #
 
